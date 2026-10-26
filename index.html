@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NET</title>
+<title>ISP Billing</title>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0;font-family:'Cairo',sans-serif}
@@ -223,7 +223,7 @@ const I=(n,s=16)=>`<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="non
 
 /* ============ i18n ============ */
 const T={
-ar:{appT:'NET',user:'اسم المستخدم',pass:'كلمة المرور',login:'تسجيل الدخول',demoHint:'-',logout:'تسجيل خروج',
+ar:{appT:'NET Bill',user:'اسم المستخدم',pass:'كلمة المرور',login:'تسجيل الدخول',demoHint:'By Melsebaey',logout:'تسجيل خروج',
 netMode:'وضع الشبكة',localMode:'بيانات محلية',theme:'الوضع الليلي / النهاري',dayToday:'اليوم',dayYest:'أمس',pdfWa:'إرسال PDF عبر واتساب',pdfBusy:'جاري إنشاء ملف PDF...',pdfErr:'تعذر إنشاء PDF — يحتاج أول مرة اتصالاً بالإنترنت لتحميل المكتبة',attachHint:'تم تنزيل ملف PDF — من فضلك أرفقه الآن في محادثة الواتساب المفتوحة',
 dashboard:'الرئيسية',customers:'المشتركون',packages:'الباقات',accounts:'الحسابات',invoices:'الفواتير',payments:'المدفوعات',expenses:'المصروفات',incomes:'الدخل الآخر',reports:'التقارير',tickets:'الدعم الفني',settings:'الإعدادات',general:'الإعدادات العامة',usersM:'المستخدمون والصلاحيات',backup:'النسخ الاحتياطي',
 quick:'الإجراءات السريعة',addCust:'إضافة عميل جديد',manInv:'إنشاء فاتورة يدوية',addPay:'إضافة دفعة',addExp:'إضافة مصروف',addInc:'إضافة دخل',totCust:'إجمالي العملاء',mRev:'إيرادات الشهر الحالي',debtorsN:'عدد المدينين',totDebt:'إجمالي المديونيات',actCust:'العملاء النشطون',recent:'آخر العمليات',myCol:'تحصيلاتي هذا الشهر',todayCol:'تحصيلات اليوم',myPays:'عدد دفعاتي',openTk:'تذاكر مفتوحة',progTk:'قيد التنفيذ',mExp:'مصروفات الشهر',mInc:'دخل الشهر',searchCust:'ابحث بالاسم أو الهاتف...',noRes:'لا توجد نتائج',pay:'سداد',
@@ -236,7 +236,7 @@ finRep:'التقرير المالي الشامل',debtRep:'تقرير المدي
 tkT:'تذاكر الدعم الفني',addTk:'تذكرة جديدة',tkTitle:'عنوان التذكرة',tkCust:'العميل (اختياري)',tkType:'النوع',tVisit:'زيارة فنية',tComplaint:'شكوى',tInstall:'تركيب جديد',tOther:'أخرى',prio:'الأولوية',pHigh:'عالية',pMed:'متوسطة',pLow:'منخفضة',assign:'المسؤول',tOpen:'مفتوحة',tProg:'قيد التنفيذ',tDone:'مغلقة',tkStat:'حالة التذكرة',
 compInfo:'معلومات الشركة',cname:'اسم الشركة',logoF:'الشعار',addressF:'العنوان',contacts:'أرقام التواصل',defLang:'اللغة الافتراضية',country:'الدولة (مفتاح الهاتف)',currencyF:'العملة',currSym:'رمز العملة',taxR:'نسبة الضريبة %',saveSet:'حفظ الإعدادات',addUser:'إضافة مستخدم',uName:'الاسم',role:'الدور',rManager:'مدير',rCollector:'محصل',rSupport:'دعم فني',rCustom:'مخصص',perms:'الصلاحيات',passW:'كلمة المرور',backupNow:'نسخ احتياطي الآن (JSON)',restoreB:'استعادة من ملف',autoList:'النسخ التلقائية المحفوظة',restore:'استعادة',restoreC:'استعادة هذه النسخة؟ سيتم استبدال البيانات الحالية.',restored:'تمت الاستعادة بنجاح',backedUp:'تم إنشاء النسخة الاحتياطية',runB:'تشغيل الفوترة الشهرية الآن',lastB:'آخر تشغيل للفوترة',billingDone:'تمت عملية الفوترة',autoBNote:'الفوترة الشهرية تعمل تلقائياً (عند فتح النظام وكل 30 دقيقة) — هذا الزر للتشغيل اليدوي عند الحاجة.',srvBk:'نسخ السيرفر التلقائية (يومياً)',locBk:'نسخ هذا المتصفح (وضع محلي)',noBk:'لا توجد نسخ محفوظة بعد',
 save:'حفظ',cancel:'إلغاء',back:'رجوع',close:'إغلاق',req:'الرجاء إكمال الحقول المطلوبة',savedOk:'تم الحفظ بنجاح',delOk:'تم الحذف',welcome:'مرحباً',badLogin:'بيانات الدخول غير صحيحة أو اسم المستخدم مكرر',sendWa:'إرسال واتساب',dateF:'التاريخ',amountF:'المبلغ',noAcc:'غير مصرح بالوصول لهذه الصفحة',thanks:'شكراً لتعاملكم معنا'},
-en:{appT:'NET',user:'Username',pass:'Password',login:'Sign In',demoHint:'-',logout:'Logout',
+en:{appT:'NET Bill',user:'Username',pass:'Password',login:'Sign In',demoHint:'By Melsebaey',logout:'Logout',
 netMode:'Network mode',localMode:'Local data',theme:'Dark / Light mode',dayToday:'Today',dayYest:'Yesterday',pdfWa:'Send PDF via WhatsApp',pdfBusy:'Generating PDF...',pdfErr:'Cannot create PDF — first time needs internet to load the library',attachHint:'PDF downloaded — please attach it to the opened WhatsApp chat',
 dashboard:'Home',customers:'Subscribers',packages:'Packages',accounts:'Accounts',invoices:'Invoices',payments:'Payments',expenses:'Expenses',incomes:'Other Income',reports:'Reports',tickets:'Support Tickets',settings:'Settings',general:'General Settings',usersM:'Users & Roles',backup:'Backup',
 quick:'Quick Actions',addCust:'Add Customer',manInv:'New Manual Invoice',addPay:'Add Payment',addExp:'Add Expense',addInc:'Add Income',totCust:'Total Customers',mRev:'Month Revenue',debtorsN:'Debtors Count',totDebt:'Total Debts',actCust:'Active Customers',recent:'Recent Activity',myCol:'My Collections (Month)',todayCol:"Today's Collections",myPays:'My Payments',openTk:'Open Tickets',progTk:'In Progress',mExp:'Month Expenses',mInc:'Month Income',searchCust:'Search by name or phone...',noRes:'No results',pay:'Pay',
