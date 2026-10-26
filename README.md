@@ -1,14 +1,119 @@
-# isp-billing
-#Click on `start.bat` to launch the application; do not close the window.
-#In your browser, open:
-#http://localhost:8080
-#or 
-#http://your PC IP address:8080
+# 📡 ISP Billing
 
-#You can access the application from any computer or mobile device connected to the same network.
-#Admin user:
-#Username: admin
-#Password: 123456
-#Collector user:
-#Username: user
-#Password: 123456
+<div align="center">
+
+![Status](https://img.shields.io/badge/status-active-success.svg)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Platform](https://img.shields.io/badge/platform-Windows-lightgrey.svg)
+
+**نظام إدارة فواتير مزود خدمة الإنترنت (ISP)**
+
+</div>
+
+---
+
+## 📑 المحتويات
+
+- [نظرة عامة](#-نظرة-عامة)
+- [التشغيل](#-التشغيل)
+- [الوصول إلى التطبيق](#-الوصول-إلى-التطبيق)
+- [بيانات الدخول الافتراضية](#-بيانات-الدخول-الافتراضية)
+- [الوصول عبر الشبكة](#-الوصول-عبر-الشبكة)
+
+---
+
+## 🔭 نظرة عامة
+
+تطبيق **ISP Billing** يتيح لك إدارة فواتير وعملاء مزود خدمة الإنترنت بسهولة، مع دعم لعدة مستخدمين وصلاحيات مختلفة (مدير / جامع فواتير)- وكذلك قسم للتذاكر الدعم الفني واخرى.
+
+---
+
+## 🚀 التشغيل
+
+1. قم بتنزيل المشروع أو استنسخه:
+
+   ```bash
+   git clone https://github.com/melsebaey/isp-billing.git
+   cd isp-billing
+   ```
+
+2. انقر مرتين على الملف **`start.bat`** لتشغيل التطبيق.
+
+   > ⚠️ **تنبيه:** لا تُغلق نافذة موجه الأوامر (Terminal) أثناء تشغيل التطبيق، وإلا سيتوقف الخادم.
+
+---
+
+## 🌐 الوصول إلى التطبيق
+
+بعد تشغيل `start.bat`، افتح متصفحك وأدخل أحد العناوين التالية:
+
+| الوصول | الرابط |
+|--------|--------|
+| 🖥️ محلي (Local) | `http://localhost:8080` |
+| 📡 عبر الشبكة | `http://your-pc-ip:8080` |
+
+> 💡 **استبدل** `your-pc-ip` بعنوان IP الخاص بجهازك على الشبكة المحلية.
+
+---
+
+## 🔐 بيانات الدخول الافتراضية
+
+### 👑 حساب المدير (Admin)
+
+```
+Username: admin
+Password: 123456
+```
+
+### 💼 حساب جامع الفواتير (Collector)
+
+```
+Username: user
+Password: 123456
+```
+
+> 🔒 **أمان:** يُنصح بتغيير كلمات المرور الافتراضية فور تسجيل الدخول الأول للحفاظ على أمان النظام.
+
+---
+
+## 📱 الوصول عبر الشبكة
+
+يمكنك الوصول إلى التطبيق من **أي جهاز كمبيوتر أو هاتف محمول** متصل بنفس الشبكة المحلية (Wi-Fi / LAN)، وذلك عبر إدخال:
+
+```
+http://your-pc-ip:8080
+```
+
+في متصفح الجهاز المستخدم.
+
+---
+
+## ⚙️ المتطلبات
+
+- نظام تشغيل: Windows
+- متصفح إنترنت حديث (Chrome / Edge / Firefox / Safari)
+- اتصال بشبكة محلية (للوصول من أجهزة أخرى)
+
+---
+
+## 🛠️ استكشاف الأخطاء
+
+| المشكلة | الحل |
+|---------|------|
+| الصفحة لا تفتح | تأكد من عدم إغلاق نافذة `start.bat` |
+| لا يمكن الوصول من جهاز آخر | تحقق من اتصال الجهازين بنفس الشبكة ومن عنوان IP |
+| المنفذ 8080 مستخدم | أوقف التطبيقات التي تستخدم نفس المنفذ وأعد التشغيل |
+
+---
+
+## 📞 الدعم
+
+للدعم الفني أو الإبلاغ عن مشكلة، يرجى فتح [Issue جديد](https://github.com/melsebaey/isp-billing/issues) على GitHub.
+
+---
+
+<div align="center">
+
+**© 2026 ISP Billing — All Rights Reserved**
+
+</div>
