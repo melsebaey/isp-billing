@@ -216,7 +216,7 @@ The **Reports** module provides a comprehensive financial overview including:
 - **Date Filtering** — Monthly or custom date ranges
 - **Export Options** — Print to PDF and Export to Excel
 
-> 💡 Currency: **Egyptian Pound (ج.م)** / العملة: **الجنيه المصري (ج.م)**
+
 
 ---
 
